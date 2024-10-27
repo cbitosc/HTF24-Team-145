@@ -1,0 +1,31 @@
+.favorite-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #ff4d4d;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.favorite-icon.active {
+  color: #ff0000;
+}
+
+.favorite-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+.favorite-item {
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 150px;
+  text-align: center;
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+.favorite-item:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on hover */
+}

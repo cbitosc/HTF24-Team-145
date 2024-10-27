@@ -1,0 +1,35 @@
+.consultations {
+  padding: 20px;
+}
+
+.consultations h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.add-slot-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.add-slot-btn:hover {
+  background-color: #45a049; /* Darker shade for hover */
+}
+
+.consultation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.consultation-item {
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
