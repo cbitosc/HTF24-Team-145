@@ -1,0 +1,26 @@
+.notification-sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .notification-sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .notification-item {
+    padding: 16px;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+  }
+  
+  .notification-item:hover {
+    background-color: #f4f4f4;
+  }

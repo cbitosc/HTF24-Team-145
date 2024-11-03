@@ -1,0 +1,31 @@
+.commissions {
+  padding: 20px;
+}
+
+.commissions h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.commission-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.commission-card {
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.preview-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+}

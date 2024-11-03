@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'marketplace/buyer_home.css' %}">
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('sidebar-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Art Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button onclick="toggleMenu()">Menu</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="sidebar-menu" class="sidebar">
+        <button class="close" onclick="toggleMenu()">×</button>
+        <ul>
+            <li><a href="{% url 'buyer_home' %}">Home</a></li>
+            <li><a href="{% url 'commission' %}">Commission</a></li>
+            <li><a href="{% url 'workshop' %}">Workshop</a></li>
+        </ul>
+    </div>
+
+    <section id="gallery">
+        <h2>Our Art Pieces</h2>
+        <div class="gallery-container">
+            <div class="art-piece" onclick="showAlert('Art Piece 1')">
+                <img src="art1.jpg" alt="Art Piece 1">
+                <h3>Art Piece 1</h3>
+                <p>Price: $100</p>
+            </div>
+            <div class="art-piece" onclick="showAlert('Art Piece 2')">
+                <img src="art2.jpg" alt="Art Piece 2">
+                <h3>Art Piece 2</h3>
+                <p>Price: $200</p>
+            </div>
+            <div class="art-piece" onclick="showAlert('Art Piece 3')">
+                <img src="art3.jpg" alt="Art Piece 3">
+                <h3>Art Piece 3</h3>
+                <p>Price: $300</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our art gallery! We showcase unique pieces from various talented artists.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Art Gallery. All rights reserved.</p>
+    </footer>
+
+    <script src="art.js"></script>
+</body>
+</html>

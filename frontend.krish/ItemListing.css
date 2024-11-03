@@ -1,0 +1,42 @@
+.item-listing {
+  padding: 20px;
+}
+
+.item-listing h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.add-item-btn {
+  background-color: #4caf50; /* Primary action button color */
+  color: white; /* Text color for the button */
+  border: none; /* Remove default border */
+  padding: 10px 16px; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 10px 0; /* Margin for spacing */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.add-item-btn:hover {
+  background-color: #45a049; /* Darker shade for hover effect */
+}
+
+.item-grid {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  gap: 10px; /* Space between items */
+}
+
+.item-card {
+  background-color: #fff; /* Card background color */
+  padding: 16px; /* Padding inside the card */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  width: 150px; /* Fixed width for cards */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.item-card:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}

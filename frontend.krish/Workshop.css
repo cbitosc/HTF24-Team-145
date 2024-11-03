@@ -1,0 +1,41 @@
+.workshops {
+    padding: 20px;
+  }
+  
+  .workshops h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .add-workshop-btn {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .workshop-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .workshop-item {
+    background-color: #fff;
+    padding: 16px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .manage-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
